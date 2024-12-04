@@ -359,9 +359,9 @@ header.sticky{
 
 
 @media (max-width: 768px) {
-    *{
-        margin: 0;
-        padding: 0;
+    body{
+        margin: 0px;
+        padding: 0px;
         box-sizing: border-box;
         
     }
@@ -396,6 +396,12 @@ header.sticky{
 }
 
 @media (max-width: 480px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+         
+    }
     .collection-card {
         width: 100%; /* Full width on very small screens */
     }
