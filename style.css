@@ -359,8 +359,17 @@ header.sticky{
 
 
 @media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
     .collection-card {
         width: calc(50% - 40px); /* Two cards per row on smaller screens */
+    }
+    .accessory-card{
+        width: calc(50% - 40px);
     }
     .main-home {
         padding: 5% 10%;
@@ -383,9 +392,6 @@ header.sticky{
     justify-content: center; /* Center vertically */
     }
 
-    .product-card {
-        width: calc(33.33% - 40px); /* Three cards per row on medium screens */
-    }
 
 }
 
@@ -394,9 +400,10 @@ header.sticky{
         width: 100%; /* Full width on very small screens */
     }
 
-    .product-card {
-        width: 100%; /* Full width on very small screens */
+    .accessory-card{
+        width: calc(50% - 40px);
     }
+
 }
 
 
