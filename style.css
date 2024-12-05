@@ -1125,7 +1125,7 @@ textarea {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        width: 100vw;
+        width: 90vw;
     }
 
     section{
@@ -1222,17 +1222,14 @@ textarea {
         font-size: 1rem;
     }
 
-   .collection-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+   .collection-card {
+        width: 100%; /* Full width for each card */
+        margin: 10px 0; /* Adjust margin for better spacing */
     }
 
-    .collection-card {
-        width: 100%;
+    .collection-grid {
+        justify-content: center; /* Center the cards in the grid */
     }
-.collection-card img{
-    width: 90px;
-    height: 100px;
-}
     .collection-card h3 {
         font-size: 18px; /* Smaller heading on mobile */
     }
