@@ -230,7 +230,7 @@ header.sticky{
     overflow: hidden;
     text-align: center;
     max-width: 300px;
-    width: 100%;
+    /* width: 100%; */
     transition: transform 0.3s ease;
 }
 
@@ -1133,14 +1133,10 @@ textarea {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        width: 100vw;
+        
     }
 
-    section{
-        padding: 0px;
-        margin: 0px 0px 0px 0px;
-        box-sizing: border-box;
-    }
+    
     .navmenu li {
     margin-top: 40px;
   }
@@ -1355,7 +1351,7 @@ textarea {
 @media (max-width: 480px) {
     body{
         margin: 0px;
-        padding: 0px;
+        
         box-sizing: border-box;
     }
 
