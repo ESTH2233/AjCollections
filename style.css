@@ -1303,6 +1303,11 @@ textarea {
     .team-member {
         max-width: 300px;
     }
+
+    .main-home {
+        padding: 5% 10%; /* Reduce padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
     .main-text h5 {
         font-size: 1.2rem; /* Smaller font for the collection title */
     }
@@ -1334,8 +1339,8 @@ textarea {
 
     
     .main-text img{
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: auto;
     margin-left: 0;
     position: relative;
     top: 0;
@@ -1387,23 +1392,20 @@ textarea {
         font-size: 1rem;
     }
 
-    .collection-card {
-        width: 100%;  
-    }
-
-    .collection-card img {
-        width: 120px; /* Further reduce image size */
-        height: 120px; /* Maintain aspect ratio */
+   .collection-card img {
+        width: 150px; /* Adjust image size for smaller screens */
+        height: 150px; /* Maintain aspect ratio */
     }
 
     .collection-card h3 {
-        font-size: 18px; /* Smaller font size for headings */
+        font-size: 20px; /* Slightly smaller font size for headings */
     }
 
     .collection-card p {
-        font-size: 12px; /* Adjust paragraph font size */
+        font-size: 14px; /* Adjust paragraph font size */
     }
 
+    
     .collection-grid{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1433,8 +1435,8 @@ textarea {
     }
 
     .main-image img {
-        width: 100px;
-        height: 100px;
+        width: 300px;
+        height: 300px;
         margin-top: 10px; /* Slightly adjust image position */
     }
 
