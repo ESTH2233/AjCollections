@@ -103,9 +103,21 @@
         </div>
     </div>
 </section>
+
+<section class="cta">
+    <div class="cta-text">
+        <h6>WINTER ON SALE</h6>
+        <h4>20% OFF <br> NEW ARRIVAL</h4>
+        <a href="#" class="main">Shop Now</a>
+    </div>
+</section>
  
 <script>
-  document.getElementById("demo").style.display = "block";
+  const header = document.querySelector("header");
+
+  window.addEventListener ("scroll", function(){
+    header.classList.toggle("sticky", window.scrollY > 0)
+  })
 </script>
     
 </body>
