@@ -258,16 +258,22 @@ header.sticky{
 }
 
 .container2 h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: #333;
     margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 70px;
     text-align: center;
 }
 
 .container2 p {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.container2 h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .accessories-grid {
@@ -286,12 +292,12 @@ header.sticky{
     text-align: center;
     max-width: 300px;
     width: 100%;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .accessory-card:hover {
     transform: translateY(-10px);
-    background-color: #EE1C47;
+   
 }
 
 .accessory-card img {
@@ -868,12 +874,12 @@ header.sticky{
 
 .product-price {
     font-size: 1.3rem;
-    color: #0073e6;
+    color: #EE1C47;
     margin-bottom: 20px;
 }
 
 .buy-btn {
-    background-color: #0073e6;
+    background-color: #EE1C47;
     color: #fff;
     padding: 12px 20px;
     text-decoration: none;
@@ -883,11 +889,11 @@ header.sticky{
 }
 
 .buy-btn:hover {
-    background-color: #005bb5;
+    background-color: #111;
 }
 
 .buy-btn:active {
-    background-color: #003d80;
+    background-color: #d51a3f;
 }
 
 /* Contact Us Section */
@@ -950,7 +956,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #0073e6;
+    border-color: #EE1C47;
     outline: none;
 }
 
@@ -959,7 +965,7 @@ textarea {
 }
 
 .submit-btn {
-    background-color: #0073e6;
+    background-color: #EE1C47;
     color: #fff;
     padding: 15px 20px;
     border: none;
@@ -971,11 +977,11 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #005bb5;
+    background-color: #111;
 }
 
 .submit-btn:active {
-    background-color: #003d80;
+    background-color: #d51a3f;
 }
 
 
