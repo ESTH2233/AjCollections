@@ -1125,11 +1125,11 @@ textarea {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        width: 90vw;
+        width: 100vw;
     }
 
     section{
-        padding: 15px 15px;
+        padding: 0px;
         margin: 0px;
         box-sizing: border-box;
     }
