@@ -15,20 +15,16 @@
         <a href="" class="logo"><h1>Aj<span>Collections</span></h1></a>
         <input type="checkbox" id="check">
         <ul class="navmenu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <label for="check" class="close"><i class="fa-solid fa-xmark"></i></label>
         </ul>
         <label for="check" class="open"><i class="fa-solid fa-bars"></i></label>
-        <div class="search">
-            <input type="search" placeholder="search...">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
         <div class="nav-icons">
-            <!-- <a href=""><i class="fa-solid fa-magnifying-glass"></i></a> -->
-            <a href=""><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="signup.html"><i class="fa-regular fa-user"></i></a>
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
@@ -38,7 +34,7 @@
             <h5>Winter Collection</h5>
             <h1>New Winter <br> Collection 2024</h1>
             <p>There's Nothing Like Trend</p>
-            <div><button><a href="" class="main">Shop Now  <i class="fa-solid fa-arrow-right"></i></a></button></div>
+            <div><button><a href="shop.html" class="main">Shop Now  <i class="fa-solid fa-arrow-right"></i></a></button></div>
             
             <div class="main-image"><img src="images/pic.png" alt="" ></div>
 
@@ -104,13 +100,35 @@
     </div>
 </section>
 
-<section class="cta">
-    <div class="cta-text">
-        <h6>WINTER ON SALE</h6>
-        <h4>20% OFF <br> NEW ARRIVAL</h4>
-        <a href="#" class="main">Shop Now</a>
+<section class="customer-reviews">
+    <h2>What Our Customers Are Saying</h2>
+    
+    <!-- Reviews Slider/Carousel -->
+    <div class="reviews-slider">
+        <div class="review">
+            <img src="images/boots.avif" alt="" width="200px" height="200px" style="border-radius: 100%;">
+            <p>"This product exceeded my expectations! It's even better in person and the quality is amazing."</p>
+            <span>- Jane Doe ★★★★★</span>
+        </div>
+        
+        <div class="review">
+            <img src="images/boots.avif" alt="" width="200px" height="200px" style="border-radius: 100%;">
+            <p>"Fast shipping and fantastic customer service. Highly recommend this store!"</p>
+            <span>- John Smith ★★★★★</span>
+        </div>
+        
+        <div class="review">
+            <img src="images/boots.avif" alt="" width="200px" height="200px" style="border-radius: 100%;">
+            <p>"I love this product. It was exactly what I was looking for. Will definitely be back for more!"</p>
+            <span>- Sarah Lee ★★★★☆</span>
+        </div>
+        
     </div>
+    
+    <a href="review.html" class="see-all-reviews">See All Reviews</a>
 </section>
+
+
  
 <script>
   const header = document.querySelector("header");
@@ -118,6 +136,79 @@
   window.addEventListener ("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0)
   })
+
+// JavaScript for simple review carousel
+document.addEventListener('DOMContentLoaded', function() {
+    const reviews = document.querySelectorAll('.review');
+    let currentReviewIndex = 0;
+    
+    function showNextReview() {
+        reviews[currentReviewIndex].style.display = 'none'; // Hide the current review
+        currentReviewIndex = (currentReviewIndex + 1) % reviews.length; // Get the next review index
+        reviews[currentReviewIndex].style.display = 'block'; // Show the next review
+    }
+
+    // Initially hide all reviews except the first
+    reviews.forEach((review, index) => {
+        if (index !== 0) {
+            review.style.display = 'none';
+        }
+    });
+
+    // Automatically rotate reviews every 5 seconds
+    setInterval(showNextReview, 5000);
+});
+
+// JavaScript for Paginating Reviews
+document.addEventListener('DOMContentLoaded', function() {
+    const reviewsPerPage = 3;
+    const reviews = document.querySelectorAll('.review-card');
+    let currentPage = 1;
+
+    // Hide all reviews initially
+    function hideAllReviews() {
+        reviews.forEach(review => review.style.display = 'none');
+    }
+
+    // Show reviews based on current page
+    function showReviewsForPage(page) {
+        hideAllReviews();
+        const start = (page - 1) * reviewsPerPage;
+        const end = start + reviewsPerPage;
+        const reviewsToShow = Array.from(reviews).slice(start, end);
+
+        reviewsToShow.forEach(review => review.style.display = 'block');
+    }
+
+    // Handle pagination links
+    function setupPagination() {
+        const previousButton = document.querySelector('.previous');
+        const nextButton = document.querySelector('.next');
+
+        previousButton.addEventListener('click', function() {
+            if (currentPage > 1) {
+                currentPage--;
+                showReviewsForPage(currentPage);
+            }
+        });
+
+        nextButton.addEventListener('click', function() {
+            const totalPages = Math.ceil(reviews.length / reviewsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                showReviewsForPage(currentPage);
+            }
+        });
+
+        showReviewsForPage(currentPage);
+    }
+
+    setupPagination();
+});
+
+
+
+
 </script>
     
 </body>
