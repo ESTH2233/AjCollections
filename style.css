@@ -193,45 +193,59 @@ header.sticky{
 } */
 
 .featured-collections {
-    background-color: #ffffff; /* White background for a clean look */
-    padding: 50px 0;
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container1 h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container1 p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
 }
 
 .collection-grid {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    gap: 20px; /* Space between grid items */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
 }
 
 .collection-card {
-    background-color: #f8f8f8; /* Light grey background for cards */
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    /* width: calc(25% - 40px);  */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     text-align: center;
-    transition: transform 0.3s, box -shadow 0.3s; /* Smooth hover effects */
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-10px);
 }
 
 .collection-card img {
-    width: 200px;
-    height: 200px; 
-    border-radius: 10px; /* Rounded corners for images */
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 
-.collection-card h3 {
-    font-size: 22px;
-    color: #333;
-    margin: 15px 0 10px;
-}
 
-.collection-card p {
-    color: #666;
-    margin-bottom: 15px;
-}
-
+ 
 .view-collection {
     background-color: #EE1C47; /* Primary button color */
     color: #fff;
@@ -520,12 +534,6 @@ header.sticky{
     color: white;
 }
 
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* About Us Page */
 .about-us {
@@ -1222,31 +1230,7 @@ textarea {
         font-size: 1rem;
     }
 
-    .collection-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-        
-
-
-     /* .collection-card {
-        
-    }  */
-
-    .collection-card img {
-        width: 150px; /* Adjust image size for smaller screens */
-        height: 150px; /* Maintain aspect ratio */
-    }
-
-    .collection-card h3 {
-        font-size: 20px; /* Slightly smaller font size for headings */
-    }
-
-    .collection-card p {
-        font-size: 14px; /* Adjust paragraph font size */
-    }
-
+    
     .view-collection {
         padding: 8px 12px; /* Adjust button padding */
     }
@@ -1392,27 +1376,8 @@ textarea {
         font-size: 1rem;
     }
 
-   .collection-card img {
-        width: 150px; /* Adjust image size for smaller screens */
-        height: 150px; /* Maintain aspect ratio */
-    }
-
-    .collection-card h3 {
-        font-size: 20px; /* Slightly smaller font size for headings */
-    }
-
-    .collection-card p {
-        font-size: 14px; /* Adjust paragraph font size */
-    }
-
+   
     
-    .collection-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .view-collection {
-        padding: 6px 10px; 
-    } 
-
     .logo h1{
     font-size: 23px;
     margin-left: 10px;
@@ -1440,19 +1405,7 @@ textarea {
         margin-top: 10px; /* Slightly adjust image position */
     }
 
-    .collection-grid {
-        grid-template-columns: 1fr; /* 1 column on small devices */
-    }
-
-    .collection-card {
-        width: 100%; /* Full width for each item */
-        margin: 10px 0; /* Reduced margins for small screens */
-    }
-
-    .collection-card h3 {
-        font-size: 16px; /* Smaller title for very small screens */
-    }
-
+    
     .view-collection {
         padding: 8px 10px; /* Smaller button */
     }
