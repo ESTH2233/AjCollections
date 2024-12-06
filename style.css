@@ -213,7 +213,7 @@ header.sticky{
 .container1 p {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .collection-grid {
@@ -242,6 +242,11 @@ header.sticky{
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.container1 h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -315,6 +320,8 @@ header.sticky{
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
+    position: relative;
+    bottom: 10px;
     transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
 }
 
@@ -342,6 +349,9 @@ header.sticky{
     transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
 }
 
+.add-to-cart a{
+    color: #fff;
+}
 .add-to-cart:hover {
     background-color: #d51a3f; /* Darker shade on hover */
     transform: scale(1.05); /* Slight zoom on hover */
@@ -530,7 +540,7 @@ header.sticky{
     margin-top: 40px;
     font-size: 1rem;
     font-weight: bold;
-    color: #0073e6;
+    color: #EE1C47;
     text-decoration: none;
     border: 2px solid #0073e6;
     padding: 10px 20px;
@@ -538,7 +548,7 @@ header.sticky{
 }
 
 .back-to-product:hover {
-    background-color: #0073e6;
+    background-color: #EE1C47;
     color: white;
 }
 
@@ -559,7 +569,7 @@ header.sticky{
 
 .about-header h1 {
     font-size: 2.5rem;
-    color: #0073e6;
+    color: #EE1C47;
     margin-bottom: 10px;
 }
 
@@ -575,7 +585,7 @@ header.sticky{
 
 .about-story h2 {
     font-size: 2rem;
-    color: #0073e6;
+    color: #EE1C47;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -606,7 +616,7 @@ header.sticky{
 
 .our-values h2 {
     font-size: 2rem;
-    color: #0073e6;
+    color: #EE1C47;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -625,7 +635,7 @@ header.sticky{
 }
 
 .our-values li strong {
-    color: #0073e6;
+    color: #EE1C47;
 }
 
 /* Meet Our Team Section */
@@ -635,7 +645,7 @@ header.sticky{
 
 .meet-our-team h2 {
     font-size: 2rem;
-    color: #0073e6;
+    color: #EE1C47;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -663,7 +673,7 @@ header.sticky{
 
 .team-member h3 {
     font-size: 1.2rem;
-    color: #0073e6;
+    color: #EE1C47;
 }
 
 .team-member p {
@@ -678,7 +688,7 @@ header.sticky{
 
 .contact-us h2 {
     font-size: 2rem;
-    color: #0073e6;
+    color: #EE1C47;
     margin-bottom: 20px;
 }
 
@@ -692,14 +702,14 @@ header.sticky{
     padding: 12px 30px;
     font-size: 1.2rem;
     color: #fff;
-    background-color: #0073e6;
+    background-color: #EE1C47;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
 }
 
 .contact-button:hover {
-    background-color: #005bb5;
+    background-color: #111;
 }
 
 
@@ -976,6 +986,10 @@ textarea {
     transition: background-color 0.3s ease;
 }
 
+.submit-btn a{
+    color: #fff;
+}
+
 .submit-btn:hover {
     background-color: #111;
 }
@@ -1082,6 +1096,50 @@ textarea {
   transition: all 0.5s ease-in-out;
 }
 
+.explore{
+    background-color: #fff;
+     padding: 40px 20px;
+}
+
+.explore-container{
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.explore-container h2{
+    font-size: 28px; 
+    color: #333;
+    
+}
+
+.explore-container p{
+    font-size: 16px; 
+    color: #555; 
+    margin-top: 20px;
+}
+
+.explore-list{
+    margin-top: 30px;
+}
+
+.explore-list h3{
+    font-size: 20px; 
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+.explore-list ul{
+    padding: 0; 
+    text-align: left; 
+    display: inline-block;
+}
+
+.explore-list li{
+    font-size: 16px; 
+    color: #555; 
+    margin-bottom: 8px;
+}
 
 
 
@@ -1171,8 +1229,8 @@ textarea {
   }
 
   .logo h1{
-    font-size: 25px;
-    margin-left: 22px;
+    font-size: 27px;
+    margin-left: 27px;
   }
 
   #search{
