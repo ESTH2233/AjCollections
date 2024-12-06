@@ -1224,8 +1224,8 @@ textarea {
     left: 10px;
   }
 
-  .search{
-    margin-left: 10px;
+  .search i{
+    margin-left: 15px;
   }
 
   .close{
@@ -1239,10 +1239,12 @@ textarea {
 
   .container1 h2{
     font-size: 1.5rem;
+   
   }
 
   .container2 h2{
     font-size: 1.3rem;
+    margin-left: 10px;
   }
 
   .whatsapp-float{
@@ -1485,6 +1487,15 @@ textarea {
   justify-content: center;
 }
 
+.container1 h2{
+    font-size: 1.5rem;
+   
+  }
+
+  .container2 h2{
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
 
 .right-arrow .right{
     position: fixed;
